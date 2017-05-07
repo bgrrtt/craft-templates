@@ -2,3 +2,8 @@
 	path = plugins/seomatic
 	url = https://github.com/nystudio107/seomatic.git
 	branch = master
+
+[submodule "plugins/instantanalytics"]
+	path = plugins/instantanalytics
+	url = https://github.com/nystudio107/instantanalytics.git
+	branch = master

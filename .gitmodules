@@ -7,3 +7,8 @@
 	path = plugins/instantanalytics
 	url = https://github.com/nystudio107/instantanalytics.git
 	branch = master
+
+[submodule "plugins/retour"]
+	path = plugins/retour
+	url = https://github.com/nystudio107/retour.git
+	branch = master

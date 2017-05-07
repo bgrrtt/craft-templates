@@ -1,0 +1,4 @@
+[submodule "plugins/seomatic"]
+	path = plugins/seomatic
+	url = https://github.com/nystudio107/seomatic.git
+	branch = master

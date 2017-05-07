@@ -1,0 +1,5 @@
+{% macro is_active(segment) %}
+  {% if craft.request.lastSegment == segment %}
+    active
+  {% endif %}
+{% endmacro %}

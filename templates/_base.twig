@@ -1,0 +1,53 @@
+{#
+ # Base template
+ # -------------
+ #
+ # This template defines your site’s base structure. It should be
+ # “extended” by another template like "_layout".
+ #
+ #}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  
+  {% block meta %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% endblock %}
+
+  {% block seo %}
+    {% hook 'seomaticRender' %}
+  {% endblock %}
+
+  {% block favicon %}
+    <link rel="shortcut icon" href="{{ siteUrl }}/img/favicon.png"/>
+  {% endblock %}
+
+  {% block style %}
+    <link rel="stylesheet" href="{{ siteUrl }}css/master.min.css" />
+  {% endblock %}
+
+  {% block headScripts %}
+  {# <script src="{{ siteUrl }}assets/js/modernizr.js"></script> #}
+  {% endblock %}
+
+</head>
+
+<body>
+
+  {% import "_macros.twig" as macros %}
+
+  {% block content %}
+  {% endblock %}
+
+  {% block footerScripts %}
+    <script src="{{ siteUrl }}js/master.min.js"></script>
+  {% endblock %}
+
+  {% block analytics %}
+    {% hook 'iaSendPageView' %}
+  {% endblock %}
+
+</body>
+</html>
